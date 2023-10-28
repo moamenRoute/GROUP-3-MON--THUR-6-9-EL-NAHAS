@@ -1,0 +1,670 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/*
+==========================================================================================
+ ///////////////////*************start section 1**************\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+.sec1 {
+    position: relative;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+/*
+==========================================================================================
+ ///////////////////*************nav bar styling**************\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+.nav-bar {
+    font-family: 'Alegreya', serif;
+    position: fixed;
+    width: 100%;
+    background-color: #F8F8F8;
+
+}
+
+
+.container-items-nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logo {
+    /*
+      anouther selution
+      float: left; 
+      */
+    width: 200px;
+    padding: 10px;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*
+==========================================================================================
+ ///////////////////*************ul links nav bar sec1**************\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+
+.links {
+    /*
+     anouther selution
+     float: right; 
+    */
+    margin: 10px;
+}
+
+.links li {
+    display: inline-block;
+
+
+}
+
+.links li a:hover {
+    color: #8e7754;
+    border-top: 5px solid #8e7754;
+
+}
+
+.links li a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 18px;
+    padding: 20px 15px;
+
+}
+
+
+
+/*
+==========================================================================================
+ ///////////////////*************home section**************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+
+
+.container-items-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    text-align: center;
+    width: 700px;
+
+}
+
+
+.header h1 {
+    font-family: 'Alegreya';
+    font-size: 76px;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.header .home-p-1,
+.header .home-p-2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 22px;
+
+}
+
+.header .home-p-1 {
+    margin-bottom: 20px;
+}
+
+.header .home-p-2 {
+    margin-bottom: 40px;
+}
+
+.buttons .btn-1,
+.buttons .btn-2 {
+    padding: 16px 25px;
+    width: 130px;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    outline-color: transparent;
+    border-radius: 6px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.buttons .btn-1 {
+    background-color: #8e7754;
+    border-color: transparent;
+    margin-right: 15px;
+}
+
+.buttons .btn-2 {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.buttons .btn-1:hover,
+.buttons .btn-2:hover {
+    color: black;
+    background-color: white;
+}
+
+/*
+==========================================================================================
+ ///////////////////*************inmation div at home sec**************\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+
+.mouse-parent {
+    position: absolute;
+    bottom: 3%;
+    display: inline-block;
+    width: 100%;
+}
+
+.mouse {
+    width: 35px;
+    height: 55px;
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.mouse span {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    animation: translate2 2s linear 3s infinite;
+
+}
+
+@keyframes translate2 {
+    20% {
+        transform: translateY(2px);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateY(8px);
+        opacity: 0.8;
+    }
+
+    60% {
+        transform: translateY(15px);
+        opacity: 0.6;
+    }
+
+    80% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+
+}
+
+/*
+==========================================================================================
+ ///////////////////*************about section**************\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+
+.sec2 {
+    width: 100%;
+    padding: 80px;
+    background-color: white;
+}
+
+.sec2 .part-1 {
+    display: inline-block;
+    width: 45%;
+    margin-right: 70px;
+
+}
+
+.part-1 img {
+    width: 100%;
+}
+
+.sec2 .part-2 {
+    display: inline-block;
+    width: 45%;
+    vertical-align: bottom;
+}
+
+.sec2 .part-2 h2 {
+    font-size: 32px;
+    font-family: 'Alegreya', serif;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.sec2 .part-2 h2+p {
+    font-size: 17px;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 2;
+
+}
+
+/*
+==========================================================================================
+ ///////////////////*************ul icons section 2**************\\\\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+.sec2 .part-2 ul {
+    list-style: none;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+.sec2 .part-2 ul li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sec2 .part-2 ul li .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E7754;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.sec2 .part-2 ul li img {
+    width: 25px;
+}
+
+/*
+==========================================================================================
+ ///////////////////*************our-location section 3**************\\\\\\\\\\\\\\\\\\\\\
+==========================================================================================
+ */
+
+.sec3 {
+    background-color: #F8F8F8;
+    padding: 80px 60px;
+    width: 100%;
+}
+
+.our-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sec3 .part-1 {
+    width: 47%;
+    padding: 10px;
+    vertical-align: top;
+
+}
+
+.sec3 .part-2 {
+    width: 47%;
+}
+
+.sec3 .part-2 img {
+    width: 100%;
+
+}
+
+.sec3 .part-1 h2 {
+    font-size: 32px;
+    font-family: 'Alegreya', serif;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.sec3 .part-1 p {
+    font-size: 17px;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+/* 
+============================================================================
+////////////////////****section 4 style****\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+============================================================================
+*/
+.sec4 {
+    background-color: white;
+    padding: 60px;
+}
+
+.baking-content {
+    text-align: center;
+}
+
+.header-sec4 h3 {
+    font-family: 'Alegreya', serif;
+    color: #303030;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.header-sec4 p {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #888888;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.contanier-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+
+
+.card {
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h4 {
+    color: #303030;
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 25px auto;
+}
+
+.card p {
+    color: #686868;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Alegreya Sans', sans-serif;
+    line-height: 1.7;
+}
+
+/* 
+============================================================================
+////////////////////****section 5 style****\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+============================================================================
+*/
+.sec5 {
+    padding: 85px 80px;
+    background-color: #F8F8F8;
+}
+
+.sec5 ul {
+    font-family: 'Alegreya Sans', sans-serif;
+    list-style: none;
+    font-size: 17px;
+    color: #686868;
+    margin-top: 30px;
+}
+
+.sec5 ul li:first-of-type {
+    margin-top: 30px;
+}
+
+.sec5 ul li {
+    margin-bottom: 30px;
+}
+
+
+.contact-part-1 {
+    width: 49%;
+    display: inline-block;
+}
+
+.contact-part-1 h2 {
+    font-family: 'Alegreya', serif;
+    color: rgb(48, 48, 48);
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 25px;
+
+}
+
+.contact-part-1 h2+p {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7;
+    padding-right: 50px;
+
+}
+
+.contact-part-1 li span:first-of-type {
+    width: 35px;
+    height: 35px;
+    background-color: #8E7754;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.contact-part-1 li span:first-of-type img {
+    width: 20px;
+}
+
+.contact-part-1 li span:nth-of-type(2) {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+.map {
+    background-image: url(../images/vt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49%;
+    height: 495px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 
+============================================================================
+////////////////////****section 6 style****\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+============================================================================
+*/
+
+.sec6 {
+    background-color: #403D38;
+    padding: 40px;
+}
+
+.content-footer h4 {
+    color: #FFFFFF;
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.pref p {
+    line-height: 2;
+    margin: 15px auto;
+}
+
+.content-footer {
+    color: #969696;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.content-footer ul {
+    list-style: none;
+
+}
+
+.content-footer ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid #4A4742;
+}
+
+.content-footer ul li:last-of-type {
+    border-bottom: 1px solid transparent;
+}
+
+.content-footer ul li::before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.pref,
+.special,
+.opening,
+.contact-details {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.clr {
+    clear: both;
+}
+
+.contact-details h4+div {
+    background-image: linear-gradient(hsl(38, 7%, 24%) 0%,
+            hsl(38, 7%, 24%) 100%), url(../images/contact-details-map.png);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #969696;
+    transition: 0.4s;
+
+    &:hover {
+        color: white;
+    }
+
+}
+
+.contact-details img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+
+}
+
+.loc-details {
+    display: flex;
+
+}
+
+.contact-details .row {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4A4742;
+}
+
+.contact-details .row:last-of-type {
+    border-bottom: 1px solid transparent;
+}
+
+/* 
+============================================================================
+////////////////////****section 7 style****\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+============================================================================
+*/
+.sec7 {
+    padding: 50px 0px;
+    background-color: #353330;
+    text-align: center;
+}
+
+.sec7 div:first-of-type {
+    margin-bottom: 30px;
+}
+
+.sec7 p {
+    color: #777777;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.sec7 span {
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #403D38;
+    display: inline-block;
+    padding: 7px;
+    cursor: pointer;
+
+}
+
+
+
+.facebook-icon:hover {
+    background-color: #3B5998;
+}
+
+.google-icon:hover {
+    background-color: #DD4B39;
+}
+
+.linkden-icon:hover {
+    background-color: #007BB5;
+}
+
+.twitter-icon:hover {
+    background-color: #00ACED;
+}
